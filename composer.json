@@ -1,0 +1,25 @@
+{
+  "name": "jvzaniolo/client-manager",
+  "description": "Code challenge for Kabum! Full-Stack Dev opening",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Jvzaniolo\\ClientManager\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Pds\\Skeleton\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "João Vitor",
+      "email": "jv.zaniolo@gmail.com"
+    }
+  ],
+  "bin": [
+    "bin/client-manager"
+  ],
+  "require": {}
+}
