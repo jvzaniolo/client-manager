@@ -2,7 +2,7 @@
 
 This is a full-stack application built with PHP and MySQL. It is a simple client manager that allows you to add, edit, and delete clients and their addresses.
 
-![home-page](https://github.com/jvzaniolo/client-manager/assets/54036572/50677e8e-80e4-45fd-b970-74741ccac194)
+![edit-page](https://github.com/jvzaniolo/client-manager/assets/54036572/74fb585c-eb91-48ed-960f-fdaeff29c224)
 
 ## Installation
 
