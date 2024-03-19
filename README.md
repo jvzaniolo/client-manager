@@ -4,7 +4,7 @@ This is a full stack application built with PHP and MySQL. It is a simple client
 
 ## Installation
 
-Make sure you have PHP, Composer and Docker installed:
+1. Make sure you have PHP, Composer and Docker installed:
 
 ```
 php -v
@@ -12,27 +12,31 @@ composer -v
 docker -v
 ```
 
-Install the dependencies:
+2. Install the dependencies:
 
 ```
 composer install
 ```
 
-Start the database with Docker Compose:
+3. Start the database with Docker Compose:
 
 ```
 docker-compose up -d
 ```
 
-Start the application:
+This command will start a MySQL database on port 3306.
+
+4. Start the application:
 
 ```
 composer start
 ```
 
+This command will copy the `.env.example` file to `.env` and start the PHP built-in server.
+
 ## Usage
 
-Open your browser and go to `http://localhost:8888`.
+Open your browser and navigate to `http://localhost:8888`.
 
 You can login with the following credentials:
 
