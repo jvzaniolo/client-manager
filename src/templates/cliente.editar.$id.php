@@ -13,7 +13,7 @@
     <div class="space-y-12">
       <div class="border-b border-gray-900/10 pb-12">
         <h1 class="block text-2xl font-semibold leading-7 text-gray-900 mb-8 dark:text-white">Editar
-          <?= $client['name'] ?? 'cliente' ?>
+          <?= $this->e($client['name'] ?? 'cliente') ?>
         </h1>
 
         <h2 class="text-base font-semibold leading-7 text-gray-900 dark:text-white">Informações pessoais</h2>
@@ -27,9 +27,9 @@
           <div class="sm:col-span-3">
             <label for="name" class="block text-sm font-medium leading-6 text-gray-900 dark:text-white">Nome</label>
             <div class="mt-2">
-              <input type="text" name="client[name]" id="name" autocomplete="name"
+              <input type="text" name="client[name]" id="name" autocomplete="name" required
                 class="block w-full rounded border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6 dark:text-white dark:bg-white/5 dark:ring-white/10 dark:focus:ring-orange-500"
-                value="<?= $client['name'] ?>">
+                value="<?= $this->e($client['name']) ?>">
             </div>
             <?php if ($errors['name'] ?? false): ?>
               <p class="text-sm mt-1 text-red-500">
@@ -42,9 +42,9 @@
             <label for="birth_date" class="block text-sm font-medium leading-6 text-gray-900 dark:text-white">Data de
               Nascimento</label>
             <div class="mt-2">
-              <input type="date" name="client[birth_date]" id="birth_date" autocomplete="bday"
+              <input type="date" name="client[birth_date]" id="birth_date" autocomplete="bday" required
                 class="block w-full rounded border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6 dark:text-white dark:bg-white/5 dark:ring-white/10 dark:focus:ring-orange-500"
-                value="<?= date_format(new DateTimeImmutable($client['birth_date']), 'Y-m-d') ?>">
+                value="<?= $this->e(date_format(new DateTimeImmutable($client['birth_date']), 'Y-m-d')) ?>">
             </div>
             <?php if ($errors['birth_date'] ?? false): ?>
               <p class="text-sm mt-1 text-red-500">
@@ -56,9 +56,9 @@
           <div class="sm:col-span-2">
             <label for="cpf" class="block text-sm font-medium leading-6 text-gray-900 dark:text-white">CPF</label>
             <div class="mt-2">
-              <input type="text" name="client[cpf]" id="cpf" placeholder="000.000.000-00"
+              <input type="text" name="client[cpf]" id="cpf" placeholder="000.000.000-00" required
                 class="block w-full rounded border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6 dark:text-white dark:bg-white/5 dark:ring-white/10 dark:focus:ring-orange-500"
-                value="<?= $client['cpf'] ?>">
+                value="<?= $this->e($client['cpf']) ?>">
             </div>
             <?php if ($errors['cpf'] ?? false): ?>
               <p class="text-sm mt-1 text-red-500">
@@ -70,9 +70,9 @@
           <div class="sm:col-span-2">
             <label for="rg" class="block text-sm font-medium leading-6 text-gray-900 dark:text-white">RG</label>
             <div class="mt-2">
-              <input type="text" name="client[rg]" id="rg" placeholder="00.000.000-0"
+              <input type="text" name="client[rg]" id="rg" placeholder="00.000.000-0" required
                 class="block w-full rounded border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6 dark:text-white dark:bg-white/5 dark:ring-white/10 dark:focus:ring-orange-500"
-                value="<?= $client['rg'] ?>">
+                value="<?= $this->e($client['rg']) ?>">
             </div>
             <?php if ($errors['rg'] ?? false): ?>
               <p class="text-sm mt-1 text-red-500">
@@ -86,8 +86,9 @@
               class="block text-sm font-medium leading-6 text-gray-900 dark:text-white">Telefone</label>
             <div class="mt-2">
               <input type="tel" name="client[phone]" id="phone" placeholder="(00) 00000-0000" autocomplete="tel"
+                required
                 class="block w-full rounded border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6 dark:text-white dark:bg-white/5 dark:ring-white/10 dark:focus:ring-orange-500"
-                value="<?= $client['phone'] ?>">
+                value="<?= $this->e($client['phone']) ?>">
             </div>
             <?php if ($errors['phone'] ?? false): ?>
               <p class="text-sm mt-1 text-red-500">

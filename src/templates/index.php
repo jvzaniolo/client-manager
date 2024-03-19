@@ -56,22 +56,22 @@
             <?php foreach ($clients as $client): ?>
               <tr>
                 <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0 dark:text-white">
-                  <?= $client['name'] ?>
+                  <?= $this->e($client['name']) ?>
                 </td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-gray-300">
-                  <?= $client['cpf'] ?>
+                  <?= $this->e($client['cpf']) ?>
                 </td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-gray-300">
-                  <?= $client['rg'] ?>
+                  <?= $this->e($client['rg']) ?>
                 </td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-gray-300">
-                  <?= $client['phone'] ?>
+                  <?= $this->e($client['phone']) ?>
                 </td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-gray-300">
-                  <?= date('d/m/Y', strtotime($client['birth_date'])) ?>
+                  <?= $this->e(date('d/m/Y', strtotime($client['birth_date']))) ?>
                 </td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-gray-300">
-                  <?= $client['addresses_count'] ?>
+                  <?= $this->e($client['addresses_count']) ?>
                 </td>
                 <td class="relative whitespace-nowrap text-right text-sm font-medium sm:pr-0 flex gap-2 px-3 py-4">
                   <a href="/cliente/editar?id=<?= $client['id'] ?>"
@@ -82,7 +82,7 @@
                         d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
                     </svg>
                     <span class="sr-only">Editar
-                      <?= $client['name'] ?>
+                      <?= $this->e($client['name']) ?>
                     </span>
                   </a>
 
@@ -96,7 +96,7 @@
                       </svg>
                       <span class="sr-only">
                         Excluir
-                        <?= $client['name'] ?>
+                        <?= $this->e($client['name']) ?>
                       </span>
                     </button>
                   </form>
