@@ -1,10 +1,10 @@
 # Client Manager
 
-This is a full stack application built with PHP and MySQL. It is a simple client manager that allows you to add, edit, and delete clients and their addresses.
+This is a full-stack application built with PHP and MySQL. It is a simple client manager that allows you to add, edit, and delete clients and their addresses.
 
 ## Installation
 
-1. Make sure you have PHP, Composer and Docker installed:
+1. Make sure you have PHP 8.*, Composer, and Docker installed:
 
 ```
 php -v
@@ -38,7 +38,7 @@ This command will copy the `.env.example` file to `.env` and start the PHP built
 
 Open your browser and navigate to `http://localhost:8888`.
 
-You can login with the following credentials:
+You can log in with the following credentials:
 
 ```
 Email: john.doe@gmail.com
