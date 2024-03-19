@@ -20,9 +20,9 @@ class CreateAddressHandler
     $clientId = $_POST['client_id'];
 
     try {
-      $this->db->query('INSERT INTO addresses (client_id, address, city, state, country, postal_code) VALUES (:client_id, :address, :city, :state, :country, :postal_code)', [
+      $this->db->query('INSERT INTO addresses (client_id, street, city, state, country, postal_code) VALUES (:client_id, :street, :city, :state, :country, :postal_code)', [
         ':client_id' => $clientId,
-        ':address' => $address['address'],
+        ':street' => $address['street'],
         ':city' => $address['city'],
         ':state' => $address['state'],
         ':country' => $address['country'],

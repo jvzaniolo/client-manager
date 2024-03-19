@@ -3,7 +3,6 @@
 use App\Core\Application;
 use App\Core\Renderer;
 use App\Handlers\Address\CreateAddressHandler;
-use App\Handlers\Address\DeleteAddressHandler;
 use App\Handlers\Clients\CreateClientHandler;
 use App\Handlers\Clients\DeleteClientHandler;
 use App\Handlers\Clients\EditClientHandler;
@@ -31,7 +30,6 @@ return function ($router) {
 
   // Address
   $router->add('/endereco/criar', CreateAddressHandler::class)->only(Auth::class);
-  $router->add('/endereco/deletar', DeleteAddressHandler::class)->only(Auth::class);
 
   // 404
   $router->add('*', function () {

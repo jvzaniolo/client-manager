@@ -8,17 +8,17 @@ use League\Plates\Engine;
 
 class Renderer
 {
-    protected $renderer;
+  protected $renderer;
 
-    public function __construct()
-    {
-        $engine = new Engine(ROOT . 'templates');
-        $this->renderer = $engine;
-    }
+  public function __construct()
+  {
+    $engine = new Engine(ROOT . 'templates');
+    $this->renderer = $engine;
+  }
 
-    public function template($template, $data = [])
-    {
-        echo $this->renderer->render($template, $data);
-        exit;
-    }
+  public function template($template, $data = [])
+  {
+    echo $this->renderer->render($template, $data);
+    exit;
+  }
 }

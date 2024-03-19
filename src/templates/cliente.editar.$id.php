@@ -132,7 +132,7 @@
                       <span class="ml-3 gap-2 flex flex-col sm:flex-row">
                         <span
                           class="font-medium text-gray-900 group-has-[:checked]:text-orange-900 dark:text-white dark:group-has-[:checked]:text-orange-200">
-                          <?= $this->e($address['address']) ?>
+                          <?= $this->e($address['street']) ?>
                         </span>
                         <span
                           class="text-gray-500 group-has-[:checked]:text-orange-700 dark:text-gray-500 dark:group-has-[:checked]:text-orange-400 truncate">
@@ -191,7 +191,7 @@
       <div class="sm:col-span-4 sm:col-start-1">
         <label for="address" class="block text-sm font-medium leading-6 text-gray-900 dark:text-white">Endereço</label>
         <div class="mt-2">
-          <input type="text" name="address[address]" id="address" autocomplete="shipping street-address" required
+          <input type="text" name="address[street]" id="address" autocomplete="shipping street-address" required
             placeholder="Rua João de Souza, 123"
             class="block w-full rounded border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 dark:text-white dark:ring-white/10 dark:bg-white/5 sm:text-sm sm:leading-6">
         </div>
