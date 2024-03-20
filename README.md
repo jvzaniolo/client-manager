@@ -8,7 +8,9 @@ This is a full-stack application built with PHP and MySQL. It is a simple client
 
 There aren't a lot of recent resources online when it comes to using modern PHP techniques in 2024, so I wrote a blog post sharing the things I learned.
 
-[PHP in 2024 - DEV Community](https://dev.to/jvzaniolo/php-in-2024-3l17)
+<a href="https://dev.to/jvzaniolo/php-in-2024-3l17">
+  <img width="500" src="https://github.com/jvzaniolo/client-manager/assets/54036572/ac54cee5-c1bc-455e-825e-2b5a607afd0b" alt="PHP in 2024 - DEV Community">
+</a>
 
 ## Overview
 
