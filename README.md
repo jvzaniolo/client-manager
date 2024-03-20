@@ -4,6 +4,12 @@ This is a full-stack application built with PHP and MySQL. It is a simple client
 
 ![edit-page](https://github.com/jvzaniolo/client-manager/assets/54036572/74fb585c-eb91-48ed-960f-fdaeff29c224)
 
+## What I learned
+
+There aren't a lot of recent resources online when it comes to using modern PHP techniques in 2024, so I wrote a blog post sharing the things I learned.
+
+[PHP in 2024 - DEV Community](https://dev.to/jvzaniolo/php-in-2024-3l17)
+
 ## Overview
 
 The application has the following structure:
@@ -61,3 +67,7 @@ You can log in with the following credentials:
 Email: john.doe@gmail.com
 Password: 123456
 ```
+
+---
+
+<p align="center">Made with 🧡 by <a href="https://jvzaniolo.vercel.app/">@jvzaniolo</a></p>
