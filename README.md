@@ -50,7 +50,7 @@ Email: john.doe@gmail.com
 Password: 123456
 ```
 
-### Running locally
+## Running locally
 
 1. Make sure you have PHP 8.\*, Composer, and Docker installed:
 
