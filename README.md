@@ -72,7 +72,7 @@ composer install
 docker-compose up -d db
 ```
 
-This command will start a MySQL database on port 3306.
+This command will start a MySQL database on port :3306.
 
 4. Start the application:
 
