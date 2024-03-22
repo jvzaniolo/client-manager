@@ -41,7 +41,7 @@ docker -v
 docker-compose up -d
 ```
 
-3. Open your browser and navigate to `http://localhost:8888`.
+3. Open your browser and navigate to http://localhost:8888.
 
 You can log in with the following credentials:
 
@@ -82,7 +82,7 @@ composer start
 
 This command will copy the `.env.example` file to `.env` and start the PHP built-in server.
 
-5. Open your browser and navigate to `http://localhost:8889`.
+5. Open your browser and navigate to http://localhost:8889.
 
 You can log in with the following credentials:
 
