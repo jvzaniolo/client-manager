@@ -27,7 +27,30 @@ The application has the following structure:
 - `src/routes.php` registers the application routes and their handlers.
 - `src/utils.php` contains helper functions like `dd` for debugging.
 
-## Installation
+## Running with Docker
+
+1. Make sure you have Docker installed:
+
+```
+docker -v
+```
+
+2. Start the application and the database with Docker Compose:
+
+```
+docker-compose up -d
+```
+
+3. Open your browser and navigate to `http://localhost:8888`.
+
+You can log in with the following credentials:
+
+```
+Email: john.doe@gmail.com
+Password: 123456
+```
+
+### Running locally
 
 1. Make sure you have PHP 8.\*, Composer, and Docker installed:
 
@@ -59,9 +82,7 @@ composer start
 
 This command will copy the `.env.example` file to `.env` and start the PHP built-in server.
 
-## Usage
-
-Open your browser and navigate to `http://localhost:8888`.
+5. Open your browser and navigate to `http://localhost:8889`.
 
 You can log in with the following credentials:
 
