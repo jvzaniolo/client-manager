@@ -69,7 +69,7 @@ composer install
 3. Start the database with Docker Compose:
 
 ```
-docker-compose up -d
+docker-compose up -d db
 ```
 
 This command will start a MySQL database on port 3306.
@@ -82,7 +82,7 @@ composer start
 
 This command will copy the `.env.example` file to `.env` and start the PHP built-in server.
 
-5. Open your browser and navigate to http://localhost:8889.
+5. Open your browser and navigate to http://localhost:8888.
 
 You can log in with the following credentials:
 
