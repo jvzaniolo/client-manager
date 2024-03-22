@@ -12,3 +12,13 @@ services:
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     volumes:
       - ./initdb.sql:/docker-entrypoint-initdb.d/initdb.sql
+
+  app:
+    build: .
+    restart: always
+    ports:
+      - 8888:8888
+    depends_on:
+      - db
+    environment:
+      DATABASE_DSN: mysql:host=db;port=3306;dbname=myapp;user=root;password=my-secret-pw;charset=utf8mb4
