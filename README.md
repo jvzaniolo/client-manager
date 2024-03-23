@@ -74,6 +74,8 @@ docker-compose up -d db
 
 This command will start a MySQL database on port :3306.
 
+You can also use a local version of MySQL, just make sure to update the `.env` file with your database credentials.
+
 4. Start the application:
 
 ```
@@ -90,6 +92,16 @@ You can log in with the following credentials:
 Email: john.doe@gmail.com
 Password: 123456
 ```
+
+## Cleaning up Docker
+
+To stop the Docker containers, run:
+
+```
+docker-compose down -v --rmi all
+```
+
+This will stop the containers, remove the volumes, and delete the images.
 
 ---
 
